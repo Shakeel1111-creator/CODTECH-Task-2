@@ -1,0 +1,25 @@
+n=int(input('enter no of subjects:'))
+mark=[]
+total=0
+print('Enter Marks Obtained in all subjects:')
+for i in range(n):
+    mark.insert(i,input())
+for i in range(n):
+    total=total+int(mark[i])
+avg=total/n
+if avg>=91 and avg<=100:
+    print('Your Grade is O-Outstanding')
+elif avg>=81 and avg<=90:
+    print('Your Grade is A')
+elif avg>=71 and avg<=80:
+    print('Your Grade is B')
+elif avg>=61 and avg<=70:
+    print('Your Grade is C')
+elif avg>=51 and avg<=60:
+    print('Your Grade is D')
+elif avg>=41 and avg<=50:
+    print('Your Grade is E')
+elif avg<=40:
+    print('Fail F')
+else:
+    print('Invalid Input')
